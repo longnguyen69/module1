@@ -17,4 +17,4 @@ function isFibonacci(n) {
         return false;
     }
 }
-isFibonacci(n);
+console.log(isFibonacci(n));
