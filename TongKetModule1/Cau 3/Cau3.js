@@ -10,8 +10,11 @@ function finonaci(n){ // tim so fibonaci tu 1 => n
     return a;
 }
 let n = +prompt("nhap vao so n:");
-if (finonaci(n) === n){ // so sanh a voi n
-    console.log("true");
-} else {
-    console.log("false");
+function isFibonacci(n) {
+    if (finonaci(n) === n){ // so sanh a voi n
+        return true;
+    } else {
+        return false;
+    }
 }
+isFibonacci(n);
