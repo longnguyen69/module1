@@ -1,21 +1,22 @@
 // tạo được mảng n phần tử nhập
 let num = +prompt("nhập vào số lượng phần tử của mảng: ");
-let arrin = [];
+let arrIn = [];
 for (let i = 0; i < num; i++) {
-    arrin.push(+prompt("Nhập vào phần tử thứ " + (i + 1)));
+    arrIn.push(+prompt("Nhập vào phần tử thứ " + (i + 1)));
 }
-console.log(arrin); //mảng ban đầu
+console.log(arrIn); //mảng ban đầu
 
 let x = +prompt("nhập số muốn xóa!");
 
 // hàm TryRemoveFromArray
 function tryRemoveFromArray(arr) {
+    let arrOut = [];
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === x){
-            let arrout = arr.splice(i, 1);
-            arr = arrout;
+             arrOut = arr.splice(i, 1);
         }
     }
-    return arr;
+    console.log(arrOut); // mang khi xoa
+    return arrOut;
 }
-console.log(tryRemoveFromArray(arrin));
+tryRemoveFromArray(arrIn);
