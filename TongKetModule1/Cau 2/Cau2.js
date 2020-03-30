@@ -4,6 +4,7 @@ let arrIn = [];
 for (let i = 0; i < num; i++) {
     arrIn.push(+prompt("Nhập vào phần tử thứ " + (i + 1)));
 }
+
 console.log(arrIn); //mảng ban đầu
 
 let x = +prompt("nhập số muốn xóa!");
@@ -12,11 +13,12 @@ let x = +prompt("nhập số muốn xóa!");
 function tryRemoveFromArray(arr) {
     let arrOut = [];
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === x){
-             arrOut = arr.splice(i, 1);
+        if (arr[i] === x) {
+            arrOut = arr.splice(i, 1);
         }
     }
-    console.log(arrOut); // mang khi xoa
+    console.log(arrOut); // mang sau khi xoa
     return arrOut;
 }
+
 tryRemoveFromArray(arrIn);

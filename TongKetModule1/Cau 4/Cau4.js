@@ -1,10 +1,10 @@
-function Circle(x, y, radius, color){
+function Circle(x, y, radius, color){ // khai bao lop kinh tron
     this.x = x;
     this.y = y;
     this.radius = radius;
     this.color = color;
 }
-function render(){
+function render(){  // render hinh tron
     let ctx = document.getElementById("myCanvas").getContext("2d");
     let circle= new Circle(10, 10, 100, "#000000");
     ctx.beginPath();
