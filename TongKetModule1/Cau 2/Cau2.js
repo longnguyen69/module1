@@ -18,7 +18,7 @@ function tryRemoveFromArray(arr) {
         }
     }
     console.log(arrOut); // mang sau khi xoa
-    return arrOut;
+   // return arrOut;
 }
 
 tryRemoveFromArray(arrIn);
